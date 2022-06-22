@@ -1,3 +1,5 @@
+![img.png](assets/img.png)
+
 ## Getting Started
 
 ### Prerequisites
@@ -37,6 +39,9 @@ Install Tailwind CSS with Next.js
 IPFS Desktop for Windows
 * https://docs.ipfs.io/install/ipfs-desktop/#windows
 
+How to deploy a Next.js app onto IPFS using Fleek
+* https://blog.fleek.co/posts/fleek-nextJS
+
 # Usage
 1. Run node
 ```shell
@@ -52,6 +57,9 @@ hh run scripts/mockOffchain.ts --network localhost
 ## Useful commands
 
 # Build and deploy
+
+## Manual deploy to IPFS
+
 ```shell
 npm run build
 npm run export
@@ -62,3 +70,19 @@ Then
 * Set spinning folder `output`
 * Copy CID
 * Goto browser: ipfs.ip/ipfs/QmfTDb2UmmNth2LL5gHynVm8K88QUGk4jTia27r81ewcat
+
+## Deploy with Fleek
+
+### Settings
+
+https://app.fleek.co/#/sites/raffle-dmi/settings/general?accountId=542c44fa-2ce0-4cd5-9b8a-ea8c413ed2c4
+
+Build command:
+```shell
+npm install && npm run build && npm run export
+```
+
+### Result
+
+* https://raffle-dmi.on.fleek.co
+* https://ipfs.co/ipfs/QmXAczmXRG4jmHCbs3d5d1UQdNJDzjyX8MgU5nts1Q5w8z
