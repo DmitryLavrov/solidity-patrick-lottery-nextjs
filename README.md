@@ -54,7 +54,7 @@ hh run scripts/mockOffchain.ts --network localhost
 # Build and deploy
 ```shell
 npm run build
-next export
+npm run export
 # Export successful. Files written to C:\Projects\solidity-patrick-lottery-nextjs\out
 ```
 Then 
